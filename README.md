@@ -4,9 +4,9 @@ can list windows monitors and there possible resolutions, sets mode to extended,
 This tool should be run in cmd.exe for convinience.
 
 Possible Arguments:
- -set : sets the Resoultions defined in the config.
- -list : lists all Displays
- -listmodes : lists modes of a Display (enter name)
+-set : sets the Resoultions defined in the config.
+-list : lists all Displays
+-listmodes : lists modes of a Display (enter name)
  
  Config Example:
  <DisplaySettings>

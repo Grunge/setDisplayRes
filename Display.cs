@@ -91,20 +91,10 @@ namespace PInvoke.WindowsResolution
 
             //same again, but with PRIMARY
             if (bSetPrimary && iRet == ReturnCodes.DISP_CHANGE_SUCCESSFUL)
-            {/*
-                devmode.dmFields = (int)DEVMODE_Flags.DM_POSITION;
-                devmode.dmPositionX = 0;
-                devmode.dmPositionY = 0;
-                flags = flags | ChangeDisplaySettingsFlags.CDS_SET_PRIMARY;
-                iRet = NativeMethods.ChangeDisplaySettingsEx(strDevName, ref devmode, (IntPtr)null, flags, (IntPtr)null);
-              */
+            {
                 SetAsPrimaryMonitor(a_dev);
-
             }//if primary
-
-            //apply
-            NativeMethods.ChangeDisplaySettingsEx(0, 0, 0, 0, 0);
-
+            
 			switch (iRet)
 			{
 				case ReturnCodes.DISP_CHANGE_SUCCESSFUL:
